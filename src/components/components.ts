@@ -10,7 +10,6 @@ export const AppStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: 24px;
   color: white;
 `;
@@ -48,8 +47,53 @@ export const AuthorName = styled.div`
   font-style: italic;
 `;
 
-export const Title = styled.h1`
-  
+export const NavbarTitle = styled.h3`
+  margin-left: 16px;
+`;
+
+export const NavbarContainer = styled.nav`
+  width: 100%;
+  height: 48px;
+  background-color: ${styles.color.navbarBackground};
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+`;
+
+export const LeftContainer = styled.div`
+  display: flex;
+  flex: 50%;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding-left: 16px;
+`;
+
+export const RightContainer = styled.div`
+  display: flex;
+  flex: 50%;
+  justify-content: flex-end;
+  padding-right: 40px;
+`;
+
+export const NavbarInnerContainer = styled.div`
+  width: 100%;
+  height: 56;
+  display: flex;
+`;
+
+export const NavbarButtonsContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  margin-top: 18px;
+`;
+
+export const NavbarButton = styled.button`
+  background: none;
+  margin: 8px;
+  color: white;
+  font-size: 24px;
+  border: none;
 `;
 
 export const NextQuoteButton = styled.button`
