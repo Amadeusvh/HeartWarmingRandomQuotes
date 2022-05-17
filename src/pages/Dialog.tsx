@@ -7,7 +7,7 @@ import {
   NextQuoteButton,
   Quote,
   YuukaSays,
-} from "../components/components";
+} from "../components/quoteComponents";
 
 
 const Dialog = () => {

@@ -1,5 +1,5 @@
 import {
-} from "../components/components";
+} from "../components/appComponents";
 import Dialog from "./Dialog";
 
 const Home = () => {

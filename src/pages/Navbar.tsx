@@ -1,13 +1,15 @@
 import { 
-  LeftContainer, 
-  NavbarButton, 
+  CreateQuoteButton,
+  GithubButton,
+  LeftContainer,
   NavbarButtonsContainer, 
   NavbarContainer, 
   NavbarInnerContainer, 
   NavbarTitle, 
   RightContainer 
-} from "../components/components"
-import { PlusCircle, Github, CardText } from "@styled-icons/bootstrap";
+} from "../components/navbarComponents"
+import { PlusCircle, Github} from "@styled-icons/bootstrap";
+import AboutModal from "./AboutModal";
 
 const Navbar = () => {
 
@@ -21,9 +23,15 @@ const Navbar = () => {
 
         <RightContainer>
           <NavbarButtonsContainer>
-            <NavbarButton><PlusCircle size={24}/> Create new quote</NavbarButton>
-            <NavbarButton><CardText size={24}/> About</NavbarButton>
-            <NavbarButton><Github size={24}/> Github</NavbarButton>
+
+            <CreateQuoteButton to="/new-quote">
+              <PlusCircle size={24}/> Create new quote
+            </CreateQuoteButton>
+
+            <AboutModal />
+            <GithubButton target="#" href="https://github.com/Amadeusvh">
+              <Github size={24}/> Github
+            </GithubButton>
           </NavbarButtonsContainer>
         </RightContainer>
       </NavbarInnerContainer>

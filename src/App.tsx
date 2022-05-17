@@ -1,13 +1,18 @@
 import Home from "./pages/Home"
-import { AppStyle } from "./components/components";
+import { AppStyle } from "./components/appComponents";
 import Navbar from "./pages/Navbar";
+import { Route, Routes } from "react-router-dom";
+import CreateQuote from "./pages/CreateQuote";
 
 function App() {
   return (
     <div>
       <AppStyle>
         <Navbar />
-        <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/new-quote" element={<CreateQuote/>} />
+          </Routes>
       </AppStyle>
     </div>
   );
