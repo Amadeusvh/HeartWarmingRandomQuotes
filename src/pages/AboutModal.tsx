@@ -3,6 +3,7 @@ import { useState } from "react";
 import { NavbarButton } from "../components/navbarComponents";
 import { ModalButton } from "../components/modalComponents";
 import Modal from "./Modal";
+import { aboutText } from "../components/aboutText";
 
 const AboutModal = () => {
   
@@ -29,7 +30,7 @@ const AboutModal = () => {
       >
         <div>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias error ab odio officia aliquam illum velit, officiis cumque quisquam quas rerum omnis voluptatem eveniet, odit distinctio amet quod ea nesciunt?
+            {aboutText()}
           </span>
         </div>
       </Modal>

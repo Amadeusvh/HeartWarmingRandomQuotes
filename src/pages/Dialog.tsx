@@ -3,6 +3,7 @@ import QuoteService from "../services/quotesService";
 import { QuoteType } from "../types/quoteType";
 import {
   AuthorName,
+  Content,
   DialogBox,
   NextQuoteButton,
   Quote,
@@ -30,7 +31,7 @@ const Dialog = () => {
         <YuukaSays>Yuuka Says:</YuukaSays>
         {quote && 
         <Quote>
-          <span>{quote.content}</span>
+          <Content>&emsp;{quote.content}</Content>
           <AuthorName>~{quote.author}~</AuthorName>
         </Quote>}
         <NextQuoteButton onClick={nextQuote}>Next Quote</NextQuoteButton>

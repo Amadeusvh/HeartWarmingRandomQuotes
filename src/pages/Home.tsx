@@ -1,5 +1,3 @@
-import {
-} from "../components/appComponents";
 import Dialog from "./Dialog";
 
 const Home = () => {

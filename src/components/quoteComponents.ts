@@ -7,11 +7,10 @@ export const DialogBox = styled.div`
   margin: 16px;
   padding: 80px;
   opacity: 0.8;
-  border: 8px solid black;
+  border: 8px solid ${styles.color.border};
   border-radius: 8px;
   background-color: ${styles.color.dialogBoxBackground};
   width: 50%;
-  height: auto;
 `;
 
 export const YuukaSays = styled.span`
@@ -24,6 +23,11 @@ export const YuukaSays = styled.span`
 export const Quote = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+export const Content = styled.span`
+  word-wrap: break-word;
+  text-align: justify;
 `;
 
 export const AuthorName = styled.div`
@@ -39,7 +43,7 @@ export const NextQuoteButton = styled.button`
   justify-content: flex-end;
   align-self: flex-end;
   background: ${styles.color.button};
-  color: white;
+  color: ${styles.color.text};
   font-size: 16px;
   margin: 8px;
   margin-top: 40px;

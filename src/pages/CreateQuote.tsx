@@ -1,5 +1,15 @@
+import { ArrowLeft } from "@styled-icons/bootstrap";
 import { useState } from "react";
-import { CreateQuoteContainer } from "../components/createModelComponent";
+import { 
+  CloseButton, 
+  CreateQuoteContainer, 
+  InputAuthorText, 
+  InputButton, 
+  InputContainer, 
+  InputQuoteText, 
+  NewQuoteForm, 
+  NewQuoteLabel 
+} from "../components/createQuoteComponent";
 import QuoteService from "../services/quotesService";
 
 const CreateQuote = () => {
@@ -9,41 +19,48 @@ const CreateQuote = () => {
 
   return (
     <CreateQuoteContainer>
-      <div>
-        <h3>Create a new Quote</h3>
-      </div>
+      <CloseButton to="/"><ArrowLeft size={16}/></CloseButton>
 
-      <div>
-        <form onSubmit={(event) => {
+      <h2>Create a new Quote</h2>
+
+      <InputContainer>
+        <NewQuoteForm onSubmit={(event) => {
             QuoteService.createQuote(content, author)
             .then(() => setContent(''))
             .then(() => setAuthor(''));
             event.preventDefault();
           }
-        }>
-          <label>
-            Quote:
-            <input 
+        }
+        >
+          <NewQuoteLabel>
+            Quote :
+            <InputQuoteText
               onChange={(event) => {setContent(event.target.value)}}
-              type="text" 
               name="quote"
-              placeholder="new quote"
+              placeholder='"when life give you lemons..."'
               value={content}
+              maxLength={280}
+              autoComplete="off"
+              required
             />
-          </label>
-          <label>
-            Author:
-            <input
-              onChange={(event) => {setAuthor(event.target.value)}} 
+          </NewQuoteLabel>
+
+          <NewQuoteLabel>
+            Author :
+            <InputAuthorText
+              onChange={(event) => {setAuthor(event.target.value)}}
               type="text" 
               name="author"
-              placeholder="author of the quote"
+              placeholder="Author of the quote"
               value={author}
+              maxLength={50}
+              autoComplete="off"
+              required
             />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+          </NewQuoteLabel>
+          <InputButton type="submit" value="Submit" />
+        </NewQuoteForm>
+      </InputContainer>
 
     </CreateQuoteContainer>
   );

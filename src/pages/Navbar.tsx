@@ -18,6 +18,7 @@ const Navbar = () => {
 
       <NavbarInnerContainer>
         <LeftContainer>
+          <img src="yuuka.png" width={40} alt="" />
           <NavbarTitle>Heart Warming Random Quotes</NavbarTitle>
         </LeftContainer>
 
