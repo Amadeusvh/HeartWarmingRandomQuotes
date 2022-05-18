@@ -7,7 +7,7 @@ import {
   NavbarInnerContainer, 
   NavbarTitle, 
   RightContainer 
-} from "../components/navbarComponents"
+} from "./navbarComponents"
 import { PlusCircle, Github} from "@styled-icons/bootstrap";
 import AboutModal from "./AboutModal";
 

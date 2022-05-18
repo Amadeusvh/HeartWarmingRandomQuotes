@@ -10,7 +10,7 @@ import {
   NewQuoteForm, 
   NewQuoteLabel 
 } from "../components/createQuoteComponent";
-import QuoteService from "../services/quotesService";
+import QuoteService from "../services/quoteServices";
 
 const CreateQuote = () => {
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import QuoteService from "../services/quotesService";
+import QuoteService from "../services/quoteServices";
 import { QuoteType } from "../types/quoteType";
 import {
   AuthorName,
@@ -8,7 +8,7 @@ import {
   NextQuoteButton,
   Quote,
   YuukaSays,
-} from "../components/quoteComponents";
+} from "./quoteComponents";
 
 
 const Dialog = () => {

@@ -1,6 +1,6 @@
 import Home from "./pages/Home"
 import { AppStyle } from "./components/appComponents";
-import Navbar from "./pages/Navbar";
+import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import CreateQuote from "./pages/CreateQuote";
 

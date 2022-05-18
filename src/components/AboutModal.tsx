@@ -1,9 +1,9 @@
 import { CardText } from "@styled-icons/bootstrap";
 import { useState } from "react";
-import { NavbarButton } from "../components/navbarComponents";
-import { ModalButton } from "../components/modalComponents";
+import { NavbarButton } from "./navbarComponents";
+import { ModalButton } from "./modalComponents";
 import Modal from "./Modal";
-import { aboutText } from "../components/aboutText";
+import { aboutText } from "./aboutText";
 
 const AboutModal = () => {
   
