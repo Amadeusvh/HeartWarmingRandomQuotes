@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About Project
+
+this project is the Frontend for the HWRQ App.
+
+here you will found a page for viewing the quotes, and a page for creating a new quote.
+
+Also check the backend Repo: [HWRQ_FRONT](https://github.com/Amadeusvh/HeartWarmingRandomQuotes_Back).
+
 ## Available Scripts
 
 In the project directory, you can run:
