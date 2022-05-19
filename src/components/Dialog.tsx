@@ -26,17 +26,15 @@ const Dialog = () => {
   }, []);
 
   return(
-    <>
-      <DialogBox>
-        <YuukaSays>Yuuka Says:</YuukaSays>
-        {quote && 
-        <Quote>
-          <Content>&emsp;{quote.content}</Content>
-          <AuthorName>~{quote.author}~</AuthorName>
-        </Quote>}
-        <NextQuoteButton onClick={nextQuote}>Next Quote</NextQuoteButton>
-      </DialogBox>
-    </>
+    <DialogBox>
+      <YuukaSays>Yuuka Says:</YuukaSays>
+      {quote && 
+      <Quote>
+        <Content>&emsp;{quote.content}</Content>
+        <AuthorName>~{quote.author}~</AuthorName>
+      </Quote>}
+      <NextQuoteButton onClick={nextQuote}>Next Quote</NextQuoteButton>
+    </DialogBox>
   )
 }
 

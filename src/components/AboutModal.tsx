@@ -10,9 +10,7 @@ const AboutModal = () => {
   const [show, setShow] = useState(false);
 
   const handleShow = () => setShow(true);
-  const handleClose = () => {
-    return setShow(false);
-  }
+  const handleClose = () =>  setShow(false);
 
   return (
     <div>
