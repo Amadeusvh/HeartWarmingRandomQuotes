@@ -8,7 +8,7 @@ this project is the Frontend for the HWRQ App.
 
 here you will found a page for viewing the quotes, and a page for creating a new quote.
 
-Also check the backend Repo: [HWRQ_FRONT](https://github.com/Amadeusvh/HeartWarmingRandomQuotes_Back).
+Also check the backend Repo: [HWRQ_BACK](https://github.com/Amadeusvh/HeartWarmingRandomQuotes_Back).
 
 ## Available Scripts
 
